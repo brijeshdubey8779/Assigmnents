@@ -59,5 +59,26 @@ print(l)
 '''
 
 # Write a Python script to create a list of city names taken from the user.
-
+'''
 l = []
+n = int(input("How many cities you want to enter:"))
+
+for i in range(n):
+    l.append(input(f"Enter city {i+1}:"))
+else:
+    c = input("Want to add more cities?(y/n)")
+    if c == "y" or c == "Y" or c == "yes" or c == "Yes":
+        n = int(input("How many cities you want to enter:"))
+        for i in range(n):
+            l.append(input(f"Enter city {i+1}:"))
+    else:
+        break
+print(l)
+'''
+
+# Write a Python script to create a list, where each element of the list is a digit of a given number.
+'''
+n = input("Enter a number:")
+l = [i for i in n]
+print(l)
+'''
